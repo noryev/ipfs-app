@@ -22,8 +22,6 @@ app.post('/upload', (req, res) => {
     const fileName = req.body.fileName;
     const filePath =  'files/' + fileName;
 
-
-
     file.mv(filePath, async (err) =>{
         if (err) {
         console.log('Error: failed to download the file');
